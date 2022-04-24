@@ -7,7 +7,7 @@
 
 #### 1.   Data preparation ####
 #### 1.1  Load data ####
-PP <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Assimilation.csv")
+PP <- read.csv("~/PATH/Assimilation.csv")
 
 #### 1.2  Remove unusable data ####
 PP <- PP[-c(19:72),]

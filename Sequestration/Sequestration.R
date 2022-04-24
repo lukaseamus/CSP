@@ -7,7 +7,7 @@
 
 #### 1.    Input ####
 #### 1.1   Temperature ####
-E <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Environmental.csv")
+E <- read.csv("~/PATH/Environmental.csv")
 fieldtemp <- mean(E$temp) # 13.49867°C was the mean temperature during decomposition
 
 #### 1.2   Light ####
@@ -139,7 +139,7 @@ dd0 <- function(time) {
 dd0 <- Vectorize(dd0)
 
 #### 1.4   Export ####
-c <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Constants.csv")
+c <- read.csv("~/PATH/Constants.csv")
 # Biomass export (g plant-1 yr-1), carbon export (g C plant-1 yr-1), 2017 plant density (plants m-2),
 # product 95% confidence interval (g C m-2 yr-1) constants for all species and periods
 
@@ -562,44 +562,44 @@ passs <- data.frame(time = 0:400,
 require(raster)
 # Data source: https://www.metoffice.gov.uk/hadobs/hadisst/data/download.html (doi 10.1029/2002jd002670)
 # HadISST sea surface temperature data between 1870 and 2019
-had.sst <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/HadISST_sst.nc")
+had.sst <- brick("~/PATH/HadISST_sst.nc")
 # Data source: https://www.bio-oracle.org/downloads-to-email.php (doi 10.1111/geb.12693)
 # Bio-ORACLE minimum sea surface temperature data for 2050 (RCP8.5)
-min2050.85 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP85.Surface.Temperature.Lt.min.asc.BOv2_1.asc")
+min2050.85 <- brick("~/PATH/2050AOGCM.RCP85.Surface.Temperature.Lt.min.asc.BOv2_1.asc")
 # Bio-ORACLE mean sea surface temperature data for 2050 (RCP8.5)
-mean2050.85 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP85.Surface.Temperature.Mean.asc.BOv2_1.asc") 
+mean2050.85 <- brick("~/PATH/2050AOGCM.RCP85.Surface.Temperature.Mean.asc.BOv2_1.asc") 
 # Bio-ORACLE maximum sea surface temperature data for 2050 (RCP8.5)
-max2050.85 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP85.Surface.Temperature.Lt.max.asc.BOv2_1.asc")
+max2050.85 <- brick("~/PATH/2050AOGCM.RCP85.Surface.Temperature.Lt.max.asc.BOv2_1.asc")
 # Bio-ORACLE minimum sea surface temperature data for 2100 (RCP8.5)
-min2100.85 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP85.Surface.Temperature.Lt.min.asc.BOv2_1.asc") 
+min2100.85 <- brick("~/PATH/2100AOGCM.RCP85.Surface.Temperature.Lt.min.asc.BOv2_1.asc") 
 # Bio-ORACLE mean sea surface temperature data for 2100 (RCP8.5)
-mean2100.85 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP85.Surface.Temperature.Mean.asc.BOv2_1.asc")
+mean2100.85 <- brick("~/PATH/2100AOGCM.RCP85.Surface.Temperature.Mean.asc.BOv2_1.asc")
 # Bio-ORACLE maximum sea surface temperature data for 2100 (RCP8.5)
-max2100.85 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP85.Surface.Temperature.Lt.max.asc.BOv2_1.asc") 
+max2100.85 <- brick("~/PATH/2100AOGCM.RCP85.Surface.Temperature.Lt.max.asc.BOv2_1.asc") 
 # Bio-ORACLE minimum sea surface temperature data for 2050 (RCP6.0)
-min2050.60 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP60.Surface.Temperature.Lt.min.asc.BOv2_1.asc")
+min2050.60 <- brick("~/PATH/2050AOGCM.RCP60.Surface.Temperature.Lt.min.asc.BOv2_1.asc")
 # Bio-ORACLE mean sea surface temperature data for 2050 (RCP6.0)
-mean2050.60 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP60.Surface.Temperature.Mean.asc.BOv2_1.asc") 
+mean2050.60 <- brick("~/PATH/2050AOGCM.RCP60.Surface.Temperature.Mean.asc.BOv2_1.asc") 
 # Bio-ORACLE maximum sea surface temperature data for 2050 (RCP6.0)
-max2050.60 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP60.Surface.Temperature.Lt.max.asc.BOv2_1.asc")
+max2050.60 <- brick("~/PATH/2050AOGCM.RCP60.Surface.Temperature.Lt.max.asc.BOv2_1.asc")
 # Bio-ORACLE minimum sea surface temperature data for 2100 (RCP6.0)
-min2100.60 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP60.Surface.Temperature.Lt.min.asc.BOv2_1.asc") 
+min2100.60 <- brick("~/PATH/2100AOGCM.RCP60.Surface.Temperature.Lt.min.asc.BOv2_1.asc") 
 # Bio-ORACLE mean sea surface temperature data for 2100 (RCP6.0)
-mean2100.60 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP60.Surface.Temperature.Mean.asc.BOv2_1.asc")
+mean2100.60 <- brick("~/PATH/2100AOGCM.RCP60.Surface.Temperature.Mean.asc.BOv2_1.asc")
 # Bio-ORACLE maximum sea surface temperature data for 2100 (RCP6.0)
-max2100.60 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP60.Surface.Temperature.Lt.max.asc.BOv2_1.asc") 
+max2100.60 <- brick("~/PATH/2100AOGCM.RCP60.Surface.Temperature.Lt.max.asc.BOv2_1.asc") 
 # Bio-ORACLE minimum sea surface temperature data for 2050 (RCP2.6)
-min2050.26 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP26.Surface.Temperature.Lt.min.asc.BOv2_1.asc")
+min2050.26 <- brick("~/PATH/2050AOGCM.RCP26.Surface.Temperature.Lt.min.asc.BOv2_1.asc")
 # Bio-ORACLE mean sea surface temperature data for 2050 (RCP2.6)
-mean2050.26 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP26.Surface.Temperature.Mean.asc.BOv2_1.asc") 
+mean2050.26 <- brick("~/PATH/2050AOGCM.RCP26.Surface.Temperature.Mean.asc.BOv2_1.asc") 
 # Bio-ORACLE maximum sea surface temperature data for 2050 (RCP2.6)
-max2050.26 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2050AOGCM.RCP26.Surface.Temperature.Lt.max.asc.BOv2_1.asc")
+max2050.26 <- brick("~/PATH/2050AOGCM.RCP26.Surface.Temperature.Lt.max.asc.BOv2_1.asc")
 # Bio-ORACLE minimum sea surface temperature data for 2100 (RCP2.6)
-min2100.26 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP26.Surface.Temperature.Lt.min.asc.BOv2_1.asc") 
+min2100.26 <- brick("~/PATH/2100AOGCM.RCP26.Surface.Temperature.Lt.min.asc.BOv2_1.asc") 
 # Bio-ORACLE mean sea surface temperature data for 2100 (RCP2.6)
-mean2100.26 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP26.Surface.Temperature.Mean.asc.BOv2_1.asc")
+mean2100.26 <- brick("~/PATH/2100AOGCM.RCP26.Surface.Temperature.Mean.asc.BOv2_1.asc")
 # Bio-ORACLE maximum sea surface temperature data for 2100 (RCP2.6)
-max2100.26 <- brick("~/Desktop/Plymouth University/Dissertation/Publication/Data/2100AOGCM.RCP26.Surface.Temperature.Lt.max.asc.BOv2_1.asc") 
+max2100.26 <- brick("~/PATH/2100AOGCM.RCP26.Surface.Temperature.Lt.max.asc.BOv2_1.asc") 
 
 # HadISST February data for West Hoe
 Feb <- had.sst[[seq(2, 1790, by = 12)]] # extract February for each year

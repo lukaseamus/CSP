@@ -730,7 +730,7 @@ mytheme <- theme(panel.background = element_blank(),
 
 sstp <- ggplot(sst, aes(year, temp)) +
           annotate("segment", x = Inf, y = Inf, xend = -Inf, yend = Inf, lwd = 1) +
-          geom_point(aes(colour = group), show.legend = F) +
+          geom_point(aes(colour = group), shape = 16, alpha = 0.4, show.legend = F) +
           geom_smooth(aes(fill = group, colour = group),
                      method = "loess", span = 1, size = 0.5, alpha = 0.5,
                      show.legend = F) +

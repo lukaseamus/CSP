@@ -824,13 +824,13 @@ sst.fit.60 <- cbind(min.fit, max.fit, mean.fit)[,c(1,2,5,8)]
 
 # thermal limits of the different Laminaria spp.:
 # L. hyp. and L. dig. have 20°C as their upper limit for sporophyte growth
-# and 18°C and 17°C as their upper limit for gametophyte survival (reproduction).
+# and 18°C and 17°C as their upper limit for gametophyte fertility.
 # Because we are talking about the trailing edge of these species, the
 # ceasing of sporophyte growth is taken as the upper limit: 20.1°C.
 # L. och. has 5°C as the lower limit for sporophyte growth
-# and 10°C as its lower limit for gametophyte survival (reproduction).
+# and 10°C as its lower limit for gametophyte fertility.
 # Because we are talking about the leading edge of this species, gametophyte
-# survival is taken as the lower limit: 10°C. Since we have accurate data
+# fertility is taken as the lower limit: 10°C. Since we have accurate data
 # on the arrival of L. och. in Plymouth Sound in 1946 (Parke, 1948), this value 
 # can be slightly adjusted to the minimum temperature in the region in 1945, 
 # one year before it was found

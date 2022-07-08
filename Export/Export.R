@@ -8,11 +8,11 @@
 
 #### 1.   Data preparation ####
 #### 1.1  Load data ####
-E <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Export.csv")
+E <- read.csv("~/PATH/Export.csv")
 E <- E[-c(307:323),] # remove March 2017 where there is no data for L. ochroleuca
-Carb <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Carbon.csv")
-M <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Mass.csv")
-DW <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/DW.csv")
+Carb <- read.csv("~/PATH/Carbon.csv")
+M <- read.csv("~/PATH/Mass.csv")
+DW <- read.csv("~/PATH/DW.csv")
 
 #### 1.2  Rename variables ####
 b <- E$dw.export # biomass export (g plant-1 d-1)
@@ -401,7 +401,7 @@ Cs.sum <- data.frame(season = c(rep("Spring",3), rep("Summer",3), rep("Autumn",3
 #### 5.    Standard error of the product of export and density ####
 #### 5.1   Species ####
 #### 5.1.1 Biomass export ####
-D <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Density.csv")
+D <- read.csv("~/PATH/Density.csv")
 d.stat <- with(D, describeBy(density, species, mat = T, digits = 10)) # annual means and standard errors
 
 d.stat$mean20[1] <- d.stat$mean[1] * 4/20
@@ -461,7 +461,7 @@ consta <- data.frame(period = c(rep("Year",3),rep("Spring",3),rep("Summer",3),
                      bCI = c(ba.sum$ci.prod, bs.sum$ci.prod),
                      cCI = c(Ca.sum$ci.prod, Cs.sum$ci.prod))
 
-write.csv(consta, "~/Desktop/Plymouth University/Dissertation/Publication/Data/Constants.csv", row.names = F)
+write.csv(consta, "~/PATH/Constants.csv", row.names = F)
 
 #### 7.   Clean up ####
 detach(package:fitdistrplus)

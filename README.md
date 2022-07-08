@@ -1,7 +1,7 @@
 # Climate-driven shifts in kelp forest composition reduce carbon sequestration potential
 This repository contains data and R code accompanying article 10.1111/gcb.16299 in *Global Change Biology*.
 
-The repository is split into five folders. **Assimilation**, **Export**, **Decomposition** and **Sequestration** contain all files on carbon assimilation, export, remineralisation and potential sequestration. **Irradiance** contains files required to model the local light regime by depth, which is required in **Sequestration** to estimate cumulative detrital carbon assimilation. Below is a detailed description of each file within those folders.
+The repository is split into five folders. **Assimilation**, **Export**, **Decomposition** and **Sequestration** contain all files on carbon assimilation, export, remineralisation and potential sequestration. **Irradiance** contains files required to model the local light regime by depth, which is required in **Sequestration** to estimate cumulative detrital carbon assimilation. Below is a description of each file within those folders.
 
 **Analysis**
 1. `Environmental.csv`|`Environmental.R`: *In situ* light and temperature data.

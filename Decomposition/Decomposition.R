@@ -8,9 +8,9 @@
 
 #### 1.   Data preparation ####
 #### 1.1  Load data ####
-Deco <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Decomposition.csv")
-Biochem <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Biochemical.csv")
-Grazing <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/Grazing.csv")
+Deco <- read.csv("~/PATH/Decomposition.csv")
+Biochem <- read.csv("~/PATH/Biochemical.csv")
+Grazing <- read.csv("~/PATH/Grazing.csv")
 
 #### 1.2  Reorder levels of species factor ####
 Deco <- within(Deco,{

@@ -16,7 +16,7 @@ DW <- read.csv("~/PATH/DW.csv")
 
 #### 1.2  Rename variables ####
 b <- E$dw.export # biomass export (g plant-1 d-1)
-C <- E$C.dw.export # carbon export (g C plant-1 d-1)
+C <- E$C.export # carbon export (g C plant-1 d-1)
 sp <- E$species
 time <- E$time
 

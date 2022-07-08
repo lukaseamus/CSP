@@ -8,7 +8,7 @@
 #### 1.   Data preparation ####
 #### 1.1  Load data ####
 # Data source: https://www.westernchannelobservatory.org.uk/l4_ctdf/index.php
-L4 <- read.csv("~/Desktop/Plymouth University/Dissertation/Publication/Data/L4.csv")
+L4 <- read.csv("~/PATH/L4.csv")
 
 #### 1.2  Exploratory data visualisation ####
 with(L4, plot(PAR ~ Depth)) # clearly there is one unlikely outlier above 2000

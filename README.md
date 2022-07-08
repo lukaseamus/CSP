@@ -26,9 +26,29 @@ The repository is split into five folders. **Assimilation**, **Export**, **Decom
     - **fw.export** = biomass export given in grams of wet mass per plant per day, converted from dry mass with plant-specific dry to wet mass ratios
     - **fw.export.avg** = biomass export given in grams of wet mass per plant per day, converted from dry mass with species- and month-specific dry to wet mass ratios
     - **C.export** = carbon export given in grams per plant per day, converted from dry mass with species- and month-specific carbon content (%)
-2. `Assimilation.R`: Code to analyse and visualise carbon assimilation.
-    - **Input** = `Assimilation.csv`, Figure 5b from `Decomposition.R`
-    - **Output** = Figure 5, carbon assimilation results
+2. `Carbon.csv`: Lamina carbon content data.
+    - **month** = month and year given as MMM-YY
+    - **season** = categorical variable with levels Spring, Summer, Autumn and Winter
+    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **carbon** = carbon content (%)
+3. `Mass.csv`: Sporophyte mass data.
+    - **month** = month and year given as MMM-YY
+    - **season** = categorical variable with levels Spring, Summer, Autumn and Winter
+    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **mass** = whole plant wet mass given in grams
+4. `DW.csv`: Dry to wet mass ratio data.
+    - **month** = month and year given as MMM-YY
+    - **season** = categorical variable with levels Spring, Summer, Autumn and Winter
+    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **d.w** = dry to wet mass ratio
+5. `Density.csv`: Sporophyte density data.
+    - **month** = month and year given as MMM-YY
+    - **season** = categorical variable with levels Spring, Summer, Autumn and Winter
+    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **density** = number of plants per square metre. Note that *Laminaria hyperborea* and *Laminaria ochroleuca* share a quadrat while *Laminaria digitata* occurs spatially separated. 
+6. `Export.R`: Code to analyse and visualise carbon export.
+    - **Input** = `Export.csv`, `Carbon.csv`, `Mass.csv`, `DW.csv`, `Density.csv`
+    - **Output** = Figure S2, `Constants.csv`, carbon export results
 
 **Decomposition**
 

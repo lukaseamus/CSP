@@ -115,6 +115,6 @@ This repository contains data and annotated R code accompanying article 10.1111/
     - **cCI** = half 95% confidence interval (*z* × standard error) of the product of carbon export and density
 3. `Sequestration.R`: Code to analyse the depth-irradiance relationship.
     - **Input** = `Environmental.csv`, `Constants.csv`, gross carbon assimilation functions from `Assimilation.R`, photosynthesis-irradiance relationship for *Laminaria hyperborea* (doi 10.3354/ab00515), sunlight lux to µmol photons per square metre per second conversion, seasonal and annual exponential depth-irradiance relationships from `Irradiance.R`, seasonal and annual daylight hours for Plymouth, local carbon sink coordinates (doi 10.1002/ecm.1366), HadISST historical sea surface tempertaure data available at https://www.metoffice.gov.uk/hadobs/hadisst/data/download.html (doi 10.1029/2002jd002670), Bio-ORACLE representative concentration pathway sea surface temperature predictions available at https://www.bio-oracle.org/downloads-to-email.php (doi 10.1111/geb.12693), species-specific thermal tolerance data from Figure 2b and Table S4
-    - **Output** = Figure 4, Figure S4, Figure S5, Figure S6, Figure S7, carbon export estimates, carbon sequestration potential, detrital cumulative carbon assimilation
+    - **Output** = Figure 4, Figure S4, Figure S5, Figure S6, Figure S7, carbon export estimates, carbon sequestration potential, cumulative detrital carbon assimilation
 
 Luka Seamus Wright, 10 July 2022

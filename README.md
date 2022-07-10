@@ -6,8 +6,8 @@ The repository is split into five folders. **Assimilation**, **Export**, **Decom
 **Assimilation**
 1. `Assimilation.csv`: Net and gross carbon assimilation data.
     - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
-    - **bag** = random factor (categorical variable) with levels plant (P) and mesh bag (B)
-    - **age** = detrital age in days
+    - **bag** = random factor (categorical variable) with plants (P3...24) and mesh bags (B1...9) as levels
+    - **age** = detrital age given in days
     - **R** = respiration rate given in µmol oxygen per gram of buoyant mass per hour (buoyant mass is practically identical to wet mass)
     - **NPP** = net photosynthesis rate given in µmol oxygen per gram of buoyant mass per hour
     - **GPP** = gross photosynthesis rate given in µmol oxygen per gram of buoyant mass per hour (NPP + R)
@@ -45,16 +45,42 @@ The repository is split into five folders. **Assimilation**, **Export**, **Decom
     - **month** = month and year given as MMM-YY
     - **season** = categorical variable with levels Spring, Summer, Autumn and Winter
     - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
-    - **density** = number of plants per square metre. Note that *Laminaria hyperborea* and *Laminaria ochroleuca* share a quadrat while *Laminaria digitata* occurs spatially separated. 
+    - **density** = number of plants per square metre. Note that *Laminaria hyperborea* and *Laminaria ochroleuca* share each quadrat while *Laminaria digitata* occurs spatially separated. 
 6. `Export.R`: Code to analyse and visualise carbon export.
     - **Input** = `Export.csv`, `Carbon.csv`, `Mass.csv`, `DW.csv`, `Density.csv`
     - **Output** = Figure S2, `Constants.csv`, carbon export results
 
 **Decomposition**
-
+1. `Decomposition.csv`: Biomass decomposition data.
+    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **site** = categorical variable with levels West Hoe (WH), Drake's Island (DI) and Jennycliff (JC)
+    - **substratum** = categorical variable with levels Forest and Sediment
+    - **mesh** = mesh diameter given in centimetres
+    - **g.loss** = absolute biomass loss given in grams per day
+    - **perc.loss** = relative biomass loss given in percentage of initial mass per day
+2. `Biochemical.csv`: Elemental stoichiometry and phenols in relation to decomposition.
+    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **bag** = random factor (categorical variable) with mesh bags (B1...9) as levels
+    - **age** = detrital age given in days
+    - **g.loss** = absolute biomass loss given in grams per day
+    - **perc.loss** = relative biomass loss given in percentage of initial mass per day
+    - **phenols** = final soluble polyphenolic content (%)
+    - **N** = final nitrogen content (%)
+    - **C** = final carbon content (%)
+    - **CN** = final carbon to nitrogen ratio
+3. `Grazing.csv`: Image analysis data of tissue damage on final retrieval.
+    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **bag** = random factor (categorical variable) with mesh bags (B1...9) as levels
+    - **excavation** = surface area of excavation scars relative to total tissue area (%)
+    - **perforation** = surface area of holes relative to total tissue area plus holes (%)
+4. `Decomposition.R`: Code to analyse and visualise carbon export.
+    - **Input** = `Decomposition.csv`, `Biochemical.csv`, `Grazing.csv` 
+    - **Output** = Figure 3, decomposition results
+    
 **Irradiance**
+
 
 **Sequestration**
 
 
-Luka Seamus Wright, 8 July 2022
+Luka Seamus Wright, 10 July 2022

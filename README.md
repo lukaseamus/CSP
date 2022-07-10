@@ -113,8 +113,8 @@ The repository is split into five folders. **Assimilation**, **Export**, **Decom
     - **biomass** = biomass export given in grams of dry mass per plant per year
     - **carbon** = carbon export given in grams per plant per year
     - **density** = number of plants per square metre
-    - **bCI** = half 95% confidence interval (*z* * standard error) of the product of biomass export and density
-    - **cCI** = half 95% confidence interval (*z* * standard error) of the product of carbon export and density
+    - **bCI** = half 95% confidence interval (*z* × standard error) of the product of biomass export and density
+    - **cCI** = half 95% confidence interval (*z* × standard error) of the product of carbon export and density
 3. `Sequestration.R`: Code to analyse the depth-irradiance relationship.
     - **Input** = `Environmental.csv`, `Constants.csv`, Bio-ORACLE
     - **Output** = seasonal and annual exponential depth-irradiance relationships 

@@ -78,9 +78,39 @@ The repository is split into five folders. **Assimilation**, **Export**, **Decom
     - **Output** = Figure 3, decomposition results
     
 **Irradiance**
-
-
+1. `L4.csv`: Physical and chemical data from station L4, compiled from data deposited at https://www.westernchannelobservatory.org.uk/l4_ctdf/index.php.
+    - **Date** = date given as DD.M.YY
+    - **Month** = month
+    - **Year** = year given as YYYY
+    - **Season** = categorical variable with levels Spring, Summer, Autumn and Winter
+    - **Temp** = temperature (°C)
+    - **Fluor** = fluorescence given in milligrams of chlorophyll *a* per cubic metre
+    - **Depth** = depth given in metres
+    - **Density** = water density given in kilograms per cubic metre
+    - **Salinity** = salinity (‰)
+    - **Trans** = transmission (%)
+    - **PAR** = photosynthetically active radiation given in µmol per square mettre per second
+    - **Oxygen** = oxygen given in µM
+    - **Sound** = sound velocity given in metres per second
+2. `Irradiance.R`: Code to analyse the depth-irradiance relationship.
+    - **Input** = `L4.csv`
+    - **Output** = seasonal and annual exponential depth-irradiance relationships 
+    
 **Sequestration**
-
+1. `L4.csv`: Physical and chemical data from station L4, compiled from data deposited at https://www.westernchannelobservatory.org.uk/l4_ctdf/index.php.
+    - **Date** = date given as DD.M.YY
+    - **Month** = month
+    - **Year** = year given as YYYY
+    - **Season** = categorical variable with levels Spring, Summer, Autumn and Winter
+    - **Temp** = temperature (°C)
+    - **Fluor** = fluorescence given in milligrams of chlorophyll *a* per cubic metre
+    - **Depth** = depth given in metres
+    - **Density** = water density given in kilograms per cubic metre
+    - **Salinity** = salinity (‰)
+    - **Trans** = transmission (%)
+    - **PAR** = photosynthetically active radiation given in µmol per square mettre per second
+    - **Oxygen** = oxygen given in µM
+    - **Sound** = sound velocity given in metres per second
+    
 
 Luka Seamus Wright, 10 July 2022

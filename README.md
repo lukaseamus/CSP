@@ -97,20 +97,27 @@ The repository is split into five folders. **Assimilation**, **Export**, **Decom
     - **Output** = seasonal and annual exponential depth-irradiance relationships 
     
 **Sequestration**
-1. `L4.csv`: Physical and chemical data from station L4, compiled from data deposited at https://www.westernchannelobservatory.org.uk/l4_ctdf/index.php.
-    - **Date** = date given as DD.M.YY
-    - **Month** = month
-    - **Year** = year given as YYYY
-    - **Season** = categorical variable with levels Spring, Summer, Autumn and Winter
-    - **Temp** = temperature (°C)
-    - **Fluor** = fluorescence given in milligrams of chlorophyll *a* per cubic metre
-    - **Depth** = depth given in metres
-    - **Density** = water density given in kilograms per cubic metre
-    - **Salinity** = salinity (‰)
-    - **Trans** = transmission (%)
-    - **PAR** = photosynthetically active radiation given in µmol per square mettre per second
-    - **Oxygen** = oxygen given in µM
-    - **Sound** = sound velocity given in metres per second
+1. `Environmental.csv`: Physical data from the West Hoe decomposition experiment.
+    - **date** = date given as DD/MM/YYYY
+    - **time** = time given as HH:MM:SS
+    - **d** = days from start of expeeriment given as integers
+    - **day** = days expressed numerically
+    - **sunrise** = time of sunrise given as HH:MM:SS
+    - **sunset** = time of sunset given as HH:MM:SS
+    - **daytime** = categorical variable with levels day and night based on sunrise and sunset times
+    - **temp** = temperature (°C)
+    - **lux** = light intensity given in lux
+2. `Constants.csv`: Species-specific export and density data compiled in `Export.R`.
+    - **period** = categorical variable with levels Year, Spring, Summer, Autumn and Winter
+    - **species** = categorical variable with levels *Laminaria digitata* (d), *Laminaria hyperborea* (h) and *Laminaria ochroleuca* (o)
+    - **biomass** = biomass export given in grams of dry mass per plant per year
+    - **carbon** = carbon export given in grams per plant per year
+    - **density** = number of plants per square metre
+    - **bCI** = half 95% confidence interval (*z* * standard error) of the product of biomass export and density
+    - **cCI** = half 95% confidence interval (*z* * standard error) of the product of carbon export and density
+3. `Sequestration.R`: Code to analyse the depth-irradiance relationship.
+    - **Input** = `Environmental.csv`, `Constants.csv`, Bio-ORACLE
+    - **Output** = seasonal and annual exponential depth-irradiance relationships 
     
 
 Luka Seamus Wright, 10 July 2022

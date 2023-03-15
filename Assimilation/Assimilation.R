@@ -26,7 +26,7 @@ rO2 <- PP$R# respiration (μmol O2 gFW-1 h-1)
 gppO2 <- PP$GPP # gross primary production (μmol O2 gFW-1 h-1)
 d.w <- PP$d.w # dry mass to wet mass ratio
 
-# convert μmol O2 gFW-1 to g C gDW-1 assuming a photosynthetic and respiratory quotient of 1
+# convert μmol O2 gFW-1 to g C gDW-1 assuming photosynthetic and respiratory quotients of 1
 npp <- nppO2 / d.w * 1e-6 * 12.0107 # net primary production (gC gDW-1 h-1)
 gpp <- gppO2 / d.w * 1e-6 * 12.0107 # gross primary production (gC gDW-1 h-1)
 r <- rO2 / d.w * 1e-6 * 12.0107 # respiration (gC gDW-1 h-1)

@@ -387,7 +387,7 @@ mytheme <- theme(panel.background = element_blank(),
                  text = element_text(family = "Helvetica Neue"))
 
 #### 5.4  Plots ####
-# NB number is g C are too small -> convert to mg C for plotting
+# NB numbers in g C are too small -> convert to mg C for plotting
 np <- ggplot() +
         geom_hline(yintercept = 0, lwd = .5, colour = "#000000") +
         geom_line(data = new, aes(age, npp.fit*1000, colour = sp, lty = sp), size = 0.5) +
